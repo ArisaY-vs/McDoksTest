@@ -3,24 +3,78 @@ repo_url: https://arisay-vs.github.io/SimulationPRJ.github.io/
 repo_name: ArisaY-vs/SimulationPRJ.github.io # ドキュメントの構成
 docs_dir: docs
 
-
-nav:
-  - 初期画面: index.md
-
-# テーマの設定
 theme:
   name: material
-  palette:
-    scheme: default
-    primary: indigo
+  font:
+    text: Noto Sans JP
+    code: Inconsolata
   features:
+    - content.code.annotate
+    - navigation.tabs
+    - navigation.tabs.sticky
+
     - navigation.top
+    - header.autohide
+  icon:
+    repo: fontawesome/brands/github
+
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4s
+        name: Switch to light mode
+nav:
+  - 初期画面: index.md
 
 plugins:
   search:
     lang: 'ja'
 
+extra_javascript: 
+  - js/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - "css/extra.css"
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
+
 markdown_extensions:
+  - toc:
+      permalink: true
   - admonition
-  - pymdownx.details
   - footnotes
+  - def_list
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.smartsymbols
+  - pymdownx.keys
+  - pymdownx.highlight:
+      use_pygments: true
+      noclasses: true
+      pygments_style: monokai
+      linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      # options:
+      #   custom_icons:
+      #     - overrides/.icons
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
