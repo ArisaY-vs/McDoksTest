@@ -1,0 +1,27 @@
+site_name: MOGLA取扱説明書
+repo_url: https://veriserve.github.io/MOGLA_manuals/
+repo_name: Veriserve/MOGLA_manuals# ドキュメントの構成
+docs_dir: docs
+
+
+nav:
+  - 初期画面: index.md
+  - MoAI.md
+  - TCG.md
+# テーマの設定
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+  features:
+    - navigation.top
+
+plugins:
+  search:
+    lang: 'ja'
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - footnotes
