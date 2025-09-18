@@ -1,4 +1,5 @@
-site_name: MOGLA取扱説明書
+site_name: Try GitHub Pages
+copyright: "&copy; 2025 ArisaY-vs"
 repo_url: https://arisay-vs.github.io/SimulationPRJ.github.io/
 repo_name: ArisaY-vs/SimulationPRJ.github.io # ドキュメントの構成
 docs_dir: docs
@@ -31,15 +32,6 @@ plugins:
   search:
     lang: 'ja'
 
-extra_javascript: 
-  - js/mathjax.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
-extra_css:
-  - "css/extra.css"
-  - "https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
-
 markdown_extensions:
   - toc:
       permalink: true
@@ -47,23 +39,3 @@ markdown_extensions:
   - footnotes
   - def_list
   - attr_list
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.smartsymbols
-  - pymdownx.keys
-  - pymdownx.highlight:
-      use_pygments: true
-      noclasses: true
-      pygments_style: monokai
-      linenums: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tasklist:
-      custom_checkbox: true
-      clickable_checkbox: true
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.details
