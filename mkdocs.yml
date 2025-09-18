@@ -1,41 +1,4 @@
 site_name: Try GitHub Pages
-copyright: "&copy; 2025 ArisaY-vs"
-repo_url: https://arisay-vs.github.io/SimulationPRJ.github.io/
-repo_name: ArisaY-vs/SimulationPRJ.github.io # ドキュメントの構成
-docs_dir: docs
 
 theme:
   name: material
-  font:
-    text: Noto Sans JP
-    code: Inconsolata
-  features:
-    - content.code.annotate
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
-    - header.autohide
-  palette:
-    - scheme: default
-      primary: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      toggle:
-        icon: material/brightness-4s
-        name: Switch to light mode
-nav:
-  - 初期画面: index.md
-
-plugins:
-  search:
-    lang: 'ja'
-
-markdown_extensions:
-  - toc:
-      permalink: true
-  - admonition
-  - footnotes
-  - def_list
-  - attr_list
