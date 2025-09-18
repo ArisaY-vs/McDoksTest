@@ -2,15 +2,15 @@
 
 ## 1.概要
 
-- GitHubPageで
-- 
-![ツール概要](docs/picture/MOGLA/ツール概要.png)
+- GitHubPageでWebサイトを公開する
 
-![MOGLA相関図](docs/picture/MOGLA/MOGLA相関図.png)
+
+## 見に行った展示
+
+![1999展](picts/1999.png)
+
+![恐怖心展](picts/恐怖心展.png)
 
 ---
 
-## 2. Model Generatorの使い方
-
-- Model Generatorは、仕様書などのテストベースとMBTパターンから、MBTモデル（以下、モデル図と呼ぶ）を生成する、MBT Toolの前段のユニットである
-- 2章では、Model Generatorの使い方について説明する
+## 1999展について
