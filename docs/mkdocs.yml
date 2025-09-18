@@ -1,13 +1,12 @@
 site_name: MOGLA取扱説明書
-repo_url: https://veriserve.github.io/MOGLA_manuals/
-repo_name: Veriserve/MOGLA_manuals# ドキュメントの構成
+repo_url: https://arisay-vs.github.io/SimulationPRJ.github.io/
+repo_name: ArisaY-vs/SimulationPRJ.github.io # ドキュメントの構成
 docs_dir: docs
 
 
 nav:
   - 初期画面: index.md
-  - MoAI.md
-  - TCG.md
+
 # テーマの設定
 theme:
   name: material
