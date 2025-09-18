@@ -2,3 +2,17 @@ site_name: Try GitHub Pages
 
 theme:
   name: material
+  palette:
+    primary: pink
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+
+plugins:
+  search:
+    lang: 'ja'
+
+nav:
+  - 初期画面: index.md
+
