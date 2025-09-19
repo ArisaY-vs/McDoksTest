@@ -14,5 +14,6 @@ plugins:
     lang: 'ja'
 
 nav:
-  - 初期画面: index.md
+  - 概要: index.md
+  - 1999展: 1999.md
 
